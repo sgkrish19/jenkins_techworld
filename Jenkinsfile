@@ -1,7 +1,6 @@
 pipeline {
       agent any
       parameters{
-        string(name : 'VERSION',defaultvalues : '',description :'version to deploy on pord')
         choice(name : 'VERSION',choices:['1.1.0','1.2.0','1.3.0'],description:'')
         booleanparam(name:'executeTests',defaultValues:true,description:'')
       }
